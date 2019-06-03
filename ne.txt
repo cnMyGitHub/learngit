@@ -1,0 +1,69 @@
+这玩意，是区分大小写的
+
+参考资料：
+https://www.cnblogs.com/crazytata/p/10083716.html
+
+
+
+git config --system --unset credential.helper
+
+git 
+git config
+git config --list
+git status
+R@ssw0rd.
+
+git clone https://github.com/cnMyGitHub/learngit.git
+cd learngit
+git add .
+git commit -m "提交"
+git push -u origin master
+git push origin master
+
+
+
+$ ssh-keygen -t rsa -C "15034561690@sina.cn"
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:JSDY51wiUrexO7l1WeVcFCMEI7robKWT5lUOguWk+zA 15034561690@sina.cn
+The key's randomart image is:
++---[RSA 2048]----+
+|   +o +  . ooo.++|
+|  o ooo=o . .+...|
+|   . Bo+. . . o  |
+|    * +o.o o     |
+|   o +++S.o      |
+|    + =++.       |
+|   E O.. .       |
+|    B o          |
+|     o           |
++----[SHA256]-----+
+
+
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLak6F0Ksc90Mc8v0P1EkyGvSaFncYIe9pkQZd3Lu4Om/xsXzoKu7QRQtyGpQim3DaglV/EN2htTqz8KpbebeWMYpEBZxmz0H99jdGiWSDXhUQ4k9zqD5DwSCtBv+CfiEpKG9ujEUsFJ+dscDNBpEbI4BFR4/KqLteNXjlW67o8KuiEuh1q9aAIW3yIP2Jvn6Q7vFE+0v2lxig5DlJ+PaZgzN0XqUYxbvTujBvaiaY4WYfqFNhOPrejwFJn9EUmLGK0cGCwNL0Xp3sngBQQr901bipDSx9AE4LtmZSXFiNsR1BuIv/ad5oWn2h64Oc68HYCjLQmzouQnII1kEZDN7N 15034561690@sina.cn
+
+
+clip < ~/.ssh/id_rsa.pub
+
+
+ssh -T git@github.com
+
+The authenticity of host 'github.com (13.229.188.59)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.229.188.59' (RSA) to the list of known hosts.
+Hi cnMyGitHub! You've successfully authenticated, but GitHub does not provide shell access.
+出现改信息证明成功，可以使用
+
+git@github.com:cnMyGitHub/learngit.git
+
+git commit -m "这里是备注信息" -a
+
+git push -u origin master 
