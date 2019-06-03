@@ -1,0 +1,131 @@
+Administrator@YJJ MINGW64 /i/git
+$ git clone https://github.com/cnMyGitHub/learngit.git
+Cloning into 'learngit'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+
+Administrator@YJJ MINGW64 /i/git
+$ cd learngit
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ git add .
+warning: LF will be replaced by CRLF in tomato-pie/assets/onGoingTomato.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tomato-pie/assets/staticsActiveIco.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tomato-pie/assets/tomato.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tomato-pie/background.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tomato-pie/manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tomato-pie/src.95453300.js.
+The file will have its original line endings in your working directory
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ git commit -m "测试提交"
+[master d8fb352] 测试提交
+ 28 files changed, 442 insertions(+)
+ create mode 100644 boot/boot choose.txt
+ create mode 100644 boot/boot keyboard.txt
+ create mode 100644 boot/boot.ini
+ create mode 100644 boot/readme.txt
+ create mode 100644 other/13.png
+ create mode 100644 other/bookmarks_2019_6_1.html
+ create mode 100644 other/git.txt
+ create mode 100644 other/yisheng.png
+ create mode 100644 "other/\345\217\263\345\207\273\344\272\213\344\273\266.png"
+ create mode 100644 "other/\345\270\270\347\224\250.txt"
+ create mode 100644 "other/\346\270\205\345\215\225.txt"
+ create mode 100644 tomato-pie/assets/add.svg
+ create mode 100644 tomato-pie/assets/addTODO.svg
+ create mode 100644 tomato-pie/assets/information.svg
+ create mode 100644 tomato-pie/assets/onGoingTomato.svg
+ create mode 100644 tomato-pie/assets/rmTODO.svg
+ create mode 100644 tomato-pie/assets/staticsActiveIco.svg
+ create mode 100644 tomato-pie/assets/staticsIco.svg
+ create mode 100644 tomato-pie/assets/tomato.png
+ create mode 100644 tomato-pie/assets/tomato.svg
+ create mode 100644 tomato-pie/background.js
+ create mode 100644 tomato-pie/index.html
+ create mode 100644 tomato-pie/information.79b9d49f.svg
+ create mode 100644 tomato-pie/manifest.json
+ create mode 100644 tomato-pie/readme.txt
+ create mode 100644 tomato-pie/src.95453300.js
+ create mode 100644 tomato-pie/src.cfeb731a.css
+ create mode 100644 tomato-pie/staticsIco.d0ae94ff.svg
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ ssh-keygen -t rsa -C "15034561690@sina.cn"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:JSDY51wiUrexO7l1WeVcFCMEI7robKWT5lUOguWk+zA 15034561690@sina.cn
+The key's randomart image is:
++---[RSA 2048]----+
+|   +o +  . ooo.++|
+|  o ooo=o . .+...|
+|   . Bo+. . . o  |
+|    * +o.o o     |
+|   o +++S.o      |
+|    + =++.       |
+|   E O.. .       |
+|    B o          |
+|     o           |
++----[SHA256]-----+
+
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLak6F0Ksc90Mc8v0P1EkyGvSaFncYIe9pkQZd3Lu4Om/xsXzoKu7QRQtyGpQim3DaglV/EN2htTqz8KpbebeWMYpEBZxmz0H99jdGiWSDXhUQ4k9zqD5DwSCtBv+CfiEpKG9ujEUsFJ+dscDNBpEbI4BFR4/KqLteNXjlW67o8KuiEuh1q9aAIW3yIP2Jvn6Q7vFE+0v2lxig5DlJ+PaZgzN0XqUYxbvTujBvaiaY4WYfqFNhOPrejwFJn9EUmLGK0cGCwNL0Xp3sngBQQr901bipDSx9AE4LtmZSXFiNsR1BuIv/ad5oWn2h64Oc68HYCjLQmzouQnII1kEZDN7N 15034561690@sina.cn
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (13.229.188.59)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.229.188.59' (RSA) to the list of known hosts.
+Hi cnMyGitHub! You've successfully authenticated, but GitHub does not provide shell access.
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ git remote -v
+origin  https://github.com/cnMyGitHub/learngit.git (fetch)
+origin  https://github.com/cnMyGitHub/learngit.git (push)
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ git remote add po git@github.com:cnMyGitHub/learngit.git
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ git commit -m "init log"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+        gitadd.txt
+        ne.txt
+
+nothing added to commit but untracked files present
+
+Administrator@YJJ MINGW64 /i/git/learngit (master)
+$ git push -u po master
+Enumerating objects: 36, done.
+Counting objects: 100% (36/36), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (35/35), 2.99 MiB | 1.19 MiB/s, done.
+Total 35 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:cnMyGitHub/learngit.git
+   defa2af..da47d2c  master -> master
+Branch 'master' set up to track remote branch 'master' from 'po'.
