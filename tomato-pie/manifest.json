@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "author": "岳佳君",
+    "homepage_url": "https://github.com/tomato-pie/tomato-pie",
+    "name": "Tomato Pie",
+    "description": "用心安排你的时间（已修改版 x3）",
+    "version": "1.0",
+    "icons": {
+        "128": "assets/tomato.png"
+    },
+    "browser_action": {
+        "default_icon": "assets/tomato.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "background"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

@@ -1,0 +1,36 @@
+Use The Up and Down arrow keys to move the pointer to the desired boot device.
+
+Press Enter to attempt the boot or Esc to Cancel. (* = Password Required)
+
+Boot mode is set to : UEFI ; Secure Boot : OFF
+
+LEGACY BOOT:
+	Internal HDD
+	USB Storage Device
+	Onboard NIC
+	System Device Bay
+UEFI BOOT:
+	Windows Boot Manager
+	UEFI: SAMSUNG SSD CM871 2.5 7mm 128GB, Partition 1
+OTHER OPTIONS:
+	BIOS Setup
+	BIOS Flash Update
+	Diagenostics
+	Change Boot Mode Settings
+	
+使用上下箭头键将指针移动到所需的引导设备。
+按Enter尝试启动，或按Esc取消。（*=需要密码）
+启动模式设置为：uefi；安全启动：关闭
+传统启动：
+	内置硬盘
+	USB存储设备
+	车载网卡
+	系统设备托架
+UEFI启动：
+	Windows启动管理器
+	UEFI:Samsung SSD CM871 2.5 7MM 128GB，分区1
+其他选项：
+	BIOS设置
+	BIOS刷新
+	斜射论
+	更改启动模式设置

@@ -1,0 +1,7 @@
+eventvwr
+msconfig
+regsvr32
+%windir%
+%systemdrive%
+%userprofile%
+%temp%
