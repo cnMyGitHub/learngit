@@ -1,6 +1,6 @@
-Git学习笔记
+# Git学习笔记
 
-学习记录：
+## 学习记录：
 
 	https://git-scm.com/docs
 
@@ -8,7 +8,7 @@ Git学习笔记
 
 	https://www.runoob.com/git/git-tutorial.html
 
-解释区
+## 解释区
 	
 	Git 与 SVN 区别点：
 
@@ -36,7 +36,7 @@ Git学习笔记
 	已修改表示修改了某个文件，但还没有提交保存；
 	已暂存表示把已修改的文件放在下次提交时要保存的清单中。
 
-安装区
+## 安装区
 
 	git clone 出来的，.git
 	git clone --bare, 新建目录本身
@@ -60,7 +60,7 @@ Git学习笔记
 	Windows上安装
 	http://msysgit.github.com/
 
-配置区
+## 配置区
 
 	$ git config
 	
@@ -87,13 +87,13 @@ Git学习笔记
 	
 	
 	
-获取帮助
+## 获取帮助
 
 	$ git help <verb>
 	$ git <verb> --help
 	$ man git-<verb>
 	
-仓库
+## 仓库
 
 	在工作目录中初始化新仓库
 	要对现有的某个项目开始用Git管理，只需到此项目所在的目录，执行：
@@ -133,7 +133,7 @@ Git学习笔记
 	git clone git://github.com/fsliurujie/test.git          --GIT协议
 	git clone https://github.com/fsliurujie/test.git      --HTTPS协议
 	
-当执行
+## 当执行
 
 	当执行提交操作（git commit）时，暂存区的目录树写到版本库（对象库）中，master 分支会做相应的更新。即 master 指向的目录树就是提交时暂存区的目录树。
 	每一次运行提交操作，都是对你项目作一次快照，以后可以回到这个状态，或者进行比较
@@ -152,7 +152,7 @@ Git学习笔记
 	$ git checkout HEAD .
 
 
-提交修改
+## 提交修改
 
 	以查看在你上次提交之后是否有修改
 	$ git status
@@ -225,7 +225,7 @@ Git学习笔记
 	git config --global core.pager ''
 	
 	
-忽略某些文件
+## 忽略某些文件
 
 	一般我们总会有些文件无需纳入 Git 的管理，也不希望它们总出现在未跟踪文件列表。通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。我们可以创建一个名为 .gitignore 的文件，列出要忽略的文件模式。来看一个实际的例子：
 
@@ -259,7 +259,7 @@ Git学习笔记
 	doc/**/*.txt
 	**\通配符从 Git 版本 1.8.2 以上已经可以使用。
 	
-移除文件
+## 移除文件
 	要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。可以用 git rm 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。
 
 	如果只是简单地从工作目录中手工删除文件，运行 git status 时就会在 “Changes not staged for commit” 部分（也就是未暂存清单）看到
@@ -277,7 +277,7 @@ Git学习笔记
 	$ git rm \*~
 	会递归删除当前目录及其子目录中所有 ~ 结尾的文件。
 	
-移动文件
+## 移动文件
 	运行 git mv 就相当于运行了下面三条命令：
 
 	$ mv README.txt README
@@ -285,7 +285,7 @@ Git学习笔记
 	$ git add README
 	如此分开操作，Git 也会意识到这是一次改名，所以不管何种方式都一样。当然，直接用 git mv 轻便得多，不过有时候用其他工具批处理改名的话，要记得在提交前删除老的文件名，再添加新的文件名
 	
-查看提交历史
+## 查看提交历史
 	在提交了若干更新之后，又或者克隆了某个项目，想回顾下提交历史，使用可以git log命令查看。
 
 	接下来的例子会用我专门用于演示的simplegit项目，运行下面的命令获取该项目源代码：
@@ -334,44 +334,29 @@ Git学习笔记
 	
 	查看记录
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 #########
-创建分支命令：
-git branch (branchname)
+	创建分支命令：
+	git branch (branchname)
 
-切换分支命令:
-git checkout (branchname)
+	切换分支命令:
+	git checkout (branchname)
 
-合并分支命令:
-git merge 
-	
-	
-$ mkdir gitdemo
-$ cd gitdemo/
-$ git init
-Initialized empty Git repository...
-$ touch README
-$ git add README
-$ git commit -m '第一次版本提交'
+	合并分支命令:
+	git merge 
+		
+		
+	$ mkdir gitdemo
+	$ cd gitdemo/
+	$ git init
+	Initialized empty Git repository...
+	$ touch README
+	$ git add README
+	$ git commit -m '第一次版本提交'
 
-https://www.runoob.com/git/git-branch.html
-查看记录 
+	https://www.runoob.com/git/git-branch.html
+	查看记录 
 #########
 	
 	

@@ -1,1 +1,4 @@
  git remote add myGit https://github.com/cnMyGitHub/learngit.git
+
+
+git log ®Cauthor =°±tecsun°± ÷∏¡Ó
