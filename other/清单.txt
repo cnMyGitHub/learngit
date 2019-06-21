@@ -1,15 +1,4 @@
 ﻿
-
-Win+Tab 使用Aero桌面集
-
-实习报告： 手写一天6篇
-
-实习PPT：  时间3天完成并通过
-
-工作：     3天完成泰安工程
-
-测试：     测试Git上传文件
-
 https://github.com/cnMyGitHub/learngit.git
 
 Timer
